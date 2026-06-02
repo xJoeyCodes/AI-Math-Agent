@@ -12,13 +12,19 @@ from langchain.agents import initialize_agent
 import re
 
 
-llm = ChatWatsonx(
-    model_id="ibm/granite-4-h-small",
-    url="https://us-south.ml.cloud.ibm.com",
-    project_id="skills-network",
+
+# A LLM of your choosing
+openai_llm = ChatOpenAI(
+    model="gpt-4.1-nano",
+    api_key = "your openai api key here",
 )
 
-llm_ai=ChatOpenAI(model="gpt-4.1-nano")
+watsonx_llm = ChatWatsonx(
+    model_id="ibm/granite-3-2-8b-instruct",
+    url="https://us-south.ml.cloud.ibm.com",
+    project_id="your project id associated with the API key",
+    api_key="your watsonx.ai api key here",
+)
 
 # response = llm.invoke("What is tool calling in LangChain?")
 # print("\nResponse content", response.content)
