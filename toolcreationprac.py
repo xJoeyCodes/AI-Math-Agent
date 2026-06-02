@@ -13,7 +13,7 @@ import re
 llm = ChatWatsonx(
     model_id="ibm/granite-4-h-small",
     url="https://us-south.ml.cloud.ibm.com",
-    project_id="skills-network",
+    project_id="#",
 )
 
 llm_ai=ChatOpenAI(model="gpt-4.1-nano")
