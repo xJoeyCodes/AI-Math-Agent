@@ -5,7 +5,7 @@ AI Math Assistant with LangChain Tool Calling
 ## Getting Started
 - Python 3.x
 - WATSONX_API_KEY=your_api_key_here
-- WATSONX_PROJECT_ID=your_project_id_here  (Which is associated with you api key)
+- WATSONX_PROJECT_ID=your_project_id_here  (Which is associated with you api key for watsonx)
 or any llm of your choosing i.e Openai, Claude and etc...
 
 ### Installation
